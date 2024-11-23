@@ -1,0 +1,26 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e2e2e2;
+    padding: 0px 20px;
+}
+.nav-right{
+    display: flex;
+    gap: 10px;
+}
+nav input{
+    width: 300px;
+    height: 25px;
+    border: none;
+    border-radius: 10px;
+}
+nav input::placeholder{
+    padding: 0px 10px;
+}
+nav span{
+    color: black;
+}
+nav a{
+    text-decoration: none;
+}
