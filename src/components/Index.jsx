@@ -42,7 +42,7 @@ function Index({search}) {
               <Link to={`/details/${product.id}`}>
               <img src={product.thumbnail} alt={product.title} className="card-img" />
               <div className="card-body">
-                <h2 className="card-title">{product.title}</h2>
+                <h2 className="card-title">{product.title}</h2> <br />
                 {/* <p className="card-description">{product.description}</p> */}
                 <p className="card-price">Price: ${product.price}</p>
               </div>

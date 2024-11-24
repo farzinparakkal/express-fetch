@@ -1,3 +1,4 @@
+import './Cart.css'
 import React from 'react'
 
 const Cart = ({ cart, removeFromCart }) => {

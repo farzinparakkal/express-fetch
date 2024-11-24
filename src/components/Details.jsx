@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
+import './Details.css'
 
 const Details = ({ addToCart }) => {
   const { id } = useParams()
@@ -17,12 +18,14 @@ const Details = ({ addToCart }) => {
   return (
     <div className="details">
       <img src={product.thumbnail} alt={product.title} className="details-img" />
-      <h2>{product.title}</h2>
-      <p>{product.description}</p>
-      <p>Price: ${product.price}</p>
-      <button onClick={() => addToCart(product)}>Add to Cart</button>
+      <div className="details-content">
+        <h2>{product.title}</h2>
+        <p>{product.description}</p>
+        <p>Price: ${product.price}</p>
+        <button onClick={() => addToCart(product)}>Add to Cart</button>
+      </div>
     </div>
-  );
-};
+  )
+}
 
 export default Details
